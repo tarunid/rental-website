@@ -1,0 +1,572 @@
+/* signup */
+.signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 350px;
+  margin: 100px auto;
+  padding: 10px;
+  border: 1px solid #09090913;
+  border-radius: 5px;
+  background-color: #c6c6c6b8;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #191818;
+  border-radius: 3px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+
+/* Home.js */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Ensure the background covers the entire viewport height */
+}
+
+.header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent black background to improve readability */
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; /* Adjust height as needed */
+  margin-left: 20px; /* Adjust margin as needed */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.home-content {
+  text-align: center;
+  padding: 40px;
+  margin-top: 30%;
+  color: rgb(250, 248, 248);
+}
+
+
+/* houses.js *//* Houses.css */
+/* Container for the houses section */
+.houses-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Heading for the houses section */
+.houses-heading {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Grid layout for houses */
+.houses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual house card */
+.house {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+}
+
+
+
+/* House image */
+.house img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Info section inside each house card */
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.info .name {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+hr {
+  margin: 10px 0;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+/* Action buttons and icons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.book-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+.book-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+.like-icon{
+  font-size: 1.2em;
+  color: red;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+ .share-icon {
+  font-size: 1.2em;
+  color: #000000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.like-icon:hover{
+  color: #e35e5e;
+}
+.share-icon:hover {
+  color: #605e5e;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap value to increase or decrease the space between buttons */
+  margin-top: 20px; /* Optional: Adjust to add space above the pagination */
+}
+
+.page-link {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #b0f6f6;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #000;
+}
+
+.page-link:hover {
+  background-color: #66fbfb
+}
+
+.page-link:focus {
+  outline: none;
+  background-color: #bbb;
+}
+
+
+
+/* Booking.css */
+.booking-container .error{
+  color: red;
+}
+h1{
+  text-align: center;
+}
+.book{
+  background: linear-gradient(to right, #6cc8e1, #fa9be7);
+}
+.booking-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: rgb(255, 253, 245);
+}
+.booking-container p{
+  text-align: center;
+  font-weight: 5px;
+}
+.booking-container form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.booking-container label {
+    grid-column: 1 / 2;
+    font-weight: bold;
+}
+
+.booking-container input,
+textarea {
+    grid-column: 2 / 3;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.booking-container input[type="checkbox"] {
+    grid-column: 1 / -1;
+    margin-left: -49%;
+}
+
+.booking-container input[type="submit"] {
+    grid-column: 1 / -1;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+
+
+/* .contact-us page */
+.contact{
+  background: linear-gradient(to right, #6cc8e1, #fa9be7);
+}
+.contact-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-info{
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+.contact-info,
+.contact-form {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.info-item {
+  align-items: center;
+  margin-bottom: 10px;
+}
+.icon{
+  margin-left: 10%;
+}
+.contact-form{
+  background-color: rgb(235, 254, 248);
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/* about us */
+.about-us {
+  text-align: center;
+  background-color: azure;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.circle-image {
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+/* payment */
+/* PaymentPage.css */
+
+.payment-container {
+  margin-top: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 80%;
+}
+
+.top-bar {
+  height: 10px;
+  background-color: #007bff;
+  transition: width 0.5s ease;
+}
+
+.payment-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #aaa;
+  transition: color 0.3s;
+}
+
+.step.active {
+  color: #007bff;
+}
+.payment-content {
+  margin-top: 50px;
+  margin-left: 15%;
+  padding: 20px;
+  background-color: #d7ebff;
+  border-radius: 5px;
+  max-width: 70%;
+  margin-bottom: 50px;
+}
+
+
+.payment-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment-container label {
+  margin-bottom: 5px;
+}
+
+.payment-container input {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.payment-container button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.payment-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Add more styles as needed */
+
+/* footer */
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 0;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.footer-section p {
+  margin: 0;
+  color: #b5b5b5;
+}
+
+.footer-section a {
+  color: #b5b5b5;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+
+/* chatbot */
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #288ffe;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+.chatbot-button:hover {
+  background-color: #003874;
+}
+.chatbot {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.smallchatbot{
+  background-color: rgb(245, 183, 206);
+  margin-left: 400px;
+  padding: 50px;
+  width: 350px;
+}
